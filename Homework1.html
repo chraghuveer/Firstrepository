@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="styleclass4.css">
 <title> This is Employee profile create page</title>
 </head>
-<body>
+<body class="Myclass2">
      <center>
       <h1> EMPLOYEE PROFILE CREATE PAGE</h1>
       <em><h2>Please enter the employee details below </h2></em>
       <form action="page1.html" method="get">
-      Employee name: <input type="text" name="data" maxlength="20">&nbsp;&nbsp;
-      Employee Id: <input type="number" name="id"></br><br><br>
-      Employee Age:<input typ="number" name="age">&nbsp;&nbsp;
-      Employee Address:<input type="text" name="add"></br><br><br>
-      Password:<input type="password" name="pa">&nbsp;&nbsp;
-      Employee Experience:<input type="number" name="quatity"  min="1" max="20"></br><br><br>
+      Employee name: <input type="text" placeholder="Employee Name" name="data" maxlength="20">&nbsp;&nbsp;
+      Employee Id: <input type="number" placeholder="Employee Id" name="id"></br><br><br>
+      Employee Age:<input type="number" placeholder="Employee Age" name="age">&nbsp;&nbsp;
+      Employee Address:<input type="text" placeholder="Employee Address" name="add"></br><br><br>
+      Password:<input type="password" placeholder="Password" name="pa">&nbsp;&nbsp;
+      Employee Experience:<input type="number" placeholder="Experience" name="quatity"  min="1" max="20"></br><br><br>
       Gender:<input type="checkbox" name="genderchoose" value="Male">Male<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <input type="checkbox" name="genderchoose" value="Female" checked>Female<br>
+             <input type="checkbox" name="genderchoose" value="Female" >Female<br>
+             <input type="date" name="todaysdate"><br>
              <input type="submit" value="submit">
       </form>
       </center>
