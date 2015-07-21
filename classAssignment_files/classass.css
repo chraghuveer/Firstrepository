@@ -1,6 +1,7 @@
-.R{
-color:blue;
-}
+.R span:nth-child(4){
+
+        color: white;
+  }
 .R1{
 
 color: red;
@@ -9,41 +10,41 @@ color: red;
 
 .A{
 color: green;
-
+text-align: center;
   }
 
 .G{
 color: yellow;
+text-align: center;
 
   }
   
 .H{
 color: #00FFFF;
-
+text-align: center;
 
 
   }
 .U{
 
 color: black;
-
+text-align: center;
 
   }
 
 .V{
 color: orange;
-
+text-align: center;
 
 
   }
 .E{
 
 color: #FE2EF7;
-
+text-align: center;
   }
 .E1{
 
 color:#BDBDBD;
-
+text-align: center;
    }
- 
