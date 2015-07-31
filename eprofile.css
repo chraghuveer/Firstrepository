@@ -1,0 +1,125 @@
+.back_image{
+background-image: url("eprofile.jpg");
+
+}
+#myImage{
+ position: absolute;
+ left: 1450px;
+ top: 0px;
+ z-index: 1;
+ }
+#heading{
+text-align: center;
+color: #FFFFFF;
+font-family: "verdana"
+}
+#proverb{
+
+	text-align: center;
+	color:white;
+	font-family: 'Lucida Bright', Georgia, serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+#header ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+#header li {
+	display: inline;
+	border: solid;
+	border-width: 1px 1px 0 1px;
+	margin: 0 0.5em 0 0;
+}
+#header li a {
+	padding: 0 1em;
+}
+#content {
+	border: 1px solid;
+}
+#header #selected {
+	padding-bottom: 1px; 
+	background: white;
+}
+#header li {
+	float: left;
+	border: 1px solid;
+	border-bottom-width: 0;
+	margin: 0 0.5em 0 0;
+}
+#content{
+	text-align: center;
+	border: none;
+	clear:both;
+}
+
+h1 {
+	margin: 0;
+	padding: 0 0 1em 0;
+} 
+header #selected a {
+	position: relative;
+	top: 1px;
+	background: white;
+}
+#workexp{
+	text-align: center;
+}
+.icons{
+ vertical-align: 10px;
+}
+#description{
+	text-align: center;
+	font-family: "verdana";
+	color: #F2F2F2;
+
+}
+ul#horizontal-list {
+	min-width: 100px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+		padding-left: 50px
+	}
+	ul#horizontal-list1 {
+	min-width: 1px;
+	list-style: none;
+	padding-top: 2px;
+	}
+	ul#horizontal-list1 li:nth-of-type(1) {
+		display: inline;
+		padding-left: 80px
+	}
+	ul#horizontal-list1 li:nth-of-type(2) {
+		display: inline;
+		padding-left: 120px
+	}
+	ul#horizontal-list1 li:nth-of-type(3) {
+		display: inline;
+		padding-left: 200px
+	}
+	ul#horizontal-list1 li:nth-of-type(4) {
+		display: inline;
+		padding-left: 180px
+	}
+	ul#horizontal-list1 li:nth-of-type(5) {
+		display: inline;
+		padding-left: 120px
+	}
+	ul#horizontal-list1 li:nth-of-type(6) {
+		display: inline;
+		padding-left: 140px
+	}
+	#ddd{
+       padding-left: 650px;
+
+	}
+	#eee{
+		padding-left: 720px;
+	}
