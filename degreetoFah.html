@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>degree to fahrenheit</title>
+</head>
+<body>
+Enter the temperature in deg C <input type="number" id="inpNum" onkeyup="fahrenheit()" />
+</body>
+<script>
+function fahrenheit(){
+	var inpN = document.getElementById("inpNum").value;
+	var result = ((inpN*9)/5)+32;
+	console.log(result);
+}
+</script>
+</html>

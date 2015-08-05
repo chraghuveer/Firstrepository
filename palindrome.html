@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Palinfrome check</title>
+</head>
+<body>
+
+<input type="text" id="palindrome" onkeyup="palinornot()" />
+<input type="submit" value="check" onclick="palinornot()"/>
+<div id="result">
+<p></p>
+</div>
+<script>
+function palinornot()
+{
+	var inputStr =document.getElementById("palindrome").value;
+	var length =inputStr.length;
+	var revStr = new String();
+	console.log(length);
+	
+	for(i=length;i>=0;i--)
+	{
+		
+		revStr=revStr + inputStr.charAt(i-1);
+		
+	}
+    console.log(revStr);
+    
+	if(inputStr==revStr)
+	{
+		console.log("yes");
+        document.getElementById("result").innerHTML="yes";
+   	}
+	else
+	{
+		console.log("no");
+		document.getElementById("result").innerHTML="no";
+	}
+}
+
+
+</script>
+
+</html>

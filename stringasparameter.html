@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>String as parameter </title>
+</head>
+<body>
+<input type="text" id="inpTex" onkeyup="secondchar()" />
+<div id="result">
+<p></p>
+</div>
+</body>
+<script>
+var res = new String();
+function secondchar(){
+	var a = document.getElementById("inpTex").value;
+	res = a.charAt(0);
+	res = res + a.charAt(1).toUpperCase();
+	//console.log(res);
+	for(i=2;i<a.length;i++)
+	{
+		var b = a.charAt(i);
+		res = res + b;
+		console.log(res);
+
+	}
+	document.getElementById("result").innerHTML = res;
+	}
+	
+
+</script>
+</html>

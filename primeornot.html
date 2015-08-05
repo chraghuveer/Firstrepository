@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prime or not </title>
+</head>
+<body>
+<input type="number" id="inputNum" onkeyup="primeCheck()" />
+<div id="result">
+<p> </p>
+</div>
+</body>
+<script>
+
+function primeCheck()
+{
+var inN = document.getElementById("inputNum").value;	
+console.log(isPrime1(inN));
+if(isPrime1(inN))
+{
+document.getElementById("result").innerHTML = "prime";
+}
+else
+{
+	document.getElementById("result").innerHTML = "not a prime";
+}
+}
+
+
+
+
+
+
+function isPrime1(n) {
+ if (isNaN(n) || !isFinite(n) || n%1 || n<2) return false; 
+ var m=Math.sqrt(n);
+ for (var i=2;i<=m;i++) if (n%i==0) return false;
+ return true;
+}
+
+</script>
+
+</html>
