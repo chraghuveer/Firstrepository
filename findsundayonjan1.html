@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find sunday on jan ist </title>
+</head>
+<body>
+<input type="submit" value="Check" onclick="findSun()" />
+<div id="output1">
+
+</div>
+</body>
+<script>
+function findSun()
+{
+	
+	for(var year = 2015; year <= 2030; year++)
+	  {
+        
+		var today = new Date(year,0,1);
+	    var dd = today.getDay();
+	    if(dd===0)
+	    {
+	    	var dis = "Jan 1st Of :" + year + "is Sunday" + "</br>";
+	 	    console.log(dis);
+	    	document.getElementById('output1').innerHTML += dis;
+		}
+
+	    else
+	    {
+        document.getElementById('output1').innerHTML += "";
+
+	    }
+     
+	  }
+      
+}
+</script>
+</html>

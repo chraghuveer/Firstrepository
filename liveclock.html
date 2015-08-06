@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Live Clock </title>
+</head>
+<body>
+<!-- displays time-->
+<div id="result">
+</div>
+<!-- displays date-->
+<div id="result1"> 
+</div>
+</body>
+<script>
+// Function for time and date
+function liveupdate()
+{
+var today = new Date();
+var day1 = today.getDay();
+var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var month = today.getMonth()+1;
+var yyy = today.getFullYear();
+var dayet = today.getDate();
+var hr = today.getHours();
+var min = today.getMinutes();
+var sec = today.getSeconds();
+var ampm = (hr>=12)? "AM":"PM";
+console.log(day1);
+if(hr > 12)
+{
+ampm = "PM";
+}
+else
+{
+	ampm = "AM";
+}
+
+if(hr > 12)
+{
+	hr = hr - 12;
+}
+else if(hr==0)
+{
+	hr = 12;
+}
+
+
+var dis = "Time :" + hr + ":" + min + ":" + sec + ampm;
+document.getElementById("result").innerHTML = dis;
+var dis1 = daylist[day1];
+var dis2 = "Today's Date is :" + [month,dayet,yyy].join('/');
+document.getElementById("result1").innerHTML = dis2;
+}
+setInterval("liveupdate()",1000);
+</script>
+</html>

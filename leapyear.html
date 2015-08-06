@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<html>
+<title>Find leap year </title>
+</head>
+<body>
+<input type="number" id="inpNum" onkeyup="findLeap()" />
+<div id="result">
+<p></p>
+</div>
+</body>
+<script>
+function findLeap(){
+var a = document.getElementById("inpNum").value;
+var yy = (a % 100 === 0) ? (a % 400 === 0):(a % 4 === 0);
+if(yy)
+{
+document.getElementById("result").innerHTML = "yes leap year";
+}
+
+else
+{
+document.getElementById("result").innerHTML = "not a leap year";	
+}	
+}
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MulDiv</title>
+</head>
+<body>
+Enter the first number  :<input type="number" id="inpNum1" onkeyup="mul();div()" />
+Enter the second number :<input type="number" id="inpNum2" onkeyup="mul();div()" />
+<div>
+Multiplication result : <p id="result"></p>
+Division result :<p id="result1"></p>
+</div>
+</body>
+<script>
+function mul(){
+	var num1 = document.getElementById("inpNum1").value || 0;
+	var num2 = document.getElementById("inpNum2").value || 0;
+	var res = (num1)*(num2);
+	document.getElementById("result").innerHTML = res;
+}
+
+function div(){
+	var num12 = document.getElementById("inpNum1").value || 0;
+	var num22 = document.getElementById("inpNum2").value || 1;
+	var res1 = (num12)/(num22) ;
+	document.getElementById("result1").innerHTML = res1;
+}
+</script>
+</html>

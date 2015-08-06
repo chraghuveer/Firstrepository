@@ -4,26 +4,34 @@
 <title>String as parameter </title>
 </head>
 <body>
-<input type="text" id="inpTex" onkeyup="secondchar()" />
+<input type="text" id="inpTex" onkeyup="secondchar1()" />
 <div id="result">
 <p></p>
+</div>
+<div id="result1">
 </div>
 </body>
 <script>
 var res = new String();
-function secondchar(){
-	var a = document.getElementById("inpTex").value;
-	res = a.charAt(0);
-	res = res + a.charAt(1).toUpperCase();
-	//console.log(res);
-	for(i=2;i<a.length;i++)
+function secondchar1()
+{
+var a = document.getElementById("inpTex").value;
+document.getElementById("result1").innerHTML = secondchar(a);
+
+}
+
+function secondchar(x){
+	
+	res = x.charAt(0);
+	res = res + x.charAt(1).toUpperCase();
+	for(i=2;i<x.length;i++)
 	{
-		var b = a.charAt(i);
+		var b = x.charAt(i);
 		res = res + b;
 		console.log(res);
 
 	}
-	document.getElementById("result").innerHTML = res;
+	return res;
 	}
 	
 
