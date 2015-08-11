@@ -15,25 +15,25 @@ NEVER GIVE UP!</strong></h3>
 <div id="header">
 <ul>
 <li id="selected">
-<a href="workexp.html">Previous Experiences</a>
+<a href="workexp.html" target='myiframe'>Previous Experiences</a>
 </li>
 <li id="selected">
-<a href="projects.html">Projects</a>
+<a href="projects.html" target='myiframe'>Projects</a>
 </li>
 <li id="selected">
-<a href="skills.html">Skills</a>
+<a href="skills.html" target='myiframe'>Skills</a>
 </li>
 <li id="selected">
-<a href="education.html">Education</a>
+<a href="education.html" target='myiframe'>Education</a>
 </li>
 <li id="selected">
-<a href="interest.html">Research Interest</a>
+<a href="interest.html" target='myiframe'>Research Interest</a>
 </li>
 <li id="selected">
-<a href="hobbies">Hobbies</a>
+<a href="hobbies.html" target='myiframe'>Hobbies</a>
 </li>
 <li id="selected">
-<a href="contact.html">Contact</a>
+<a href="contact.html" target='myiframe'>Contact</a>
 </li>
 </ul>
 </div >
@@ -43,30 +43,50 @@ NEVER GIVE UP!</strong></h3>
 <nav>
 <div class="icons">
 <ul id="horizontal-list">
-<li><a href="workexp.html"><img src="workexp.jpg" width="200" height="200"></a></li>
-<li><a href="projects.html"><img src="projects.jpg" width="200" height="200"></a></li>
-<li><a href="skills.html"><img src="skills.jpg" width="200" height="200"></a></li>
-<li><a href="education.html"><img src="education.jpg" width="200" height="200"></a></li>
-<li><a href="interest.html"><img src="interest.jpg" width="200" height="200"></a></li>
-<li><a href="hobbies.html"><img src="hobbies.jpg" width="200" height="200"></a></li>
+<li><a href="workexp.html" target='myiframe'><img src="workexp.jpg" width="200" height="200"></a></li>
+<li><a href="projects.html" target='myiframe'><img src="projects.jpg" width="200" height="200"></a></li>
+<li><a href="skills.html" target='myiframe'><img src="skills.jpg" width="200" height="200"></a></li>
+<li><a href="education.html" target='myiframe'><img src="education.jpg" width="200" height="200"></a></li>
+<li><a href="interest.html" target='myiframe'><img src="interest.jpg" width="200" height="200"></a></li>
+<li><a href="hobbies.html" target='myiframe'><img src="hobbies.jpg" width="200" height="200"></a></li>
 </ul>
 </div>
 <div>
 <ul id="horizontal-list1">
-<li><a href="workexp.html">WORK EXPERIENCE</a></li>
-<li><a href="projects.html">PROJECTS</a></li>
-<li><a href="skills.html">SKILLS</a></li>
-<li><a href="education.html">EDUCATION</a></li>
-<li><a href="interest.html">RESEARCH INTEREST</a></li>
-<li><a href="hobbies.html">HOBBIES</a></li>
+<li><a href="workexp.html" target='myiframe'>WORK EXPERIENCE</a></li>
+<li><a href="projects.html" target='myiframe'>PROJECTS</a></li>
+<li><a href="skills.html" target='myiframe'>SKILLS</a></li>
+<li><a href="education.html" target='myiframe'>EDUCATION</a></li>
+<li><a href="interest.html" target='myiframe'>RESEARCH INTEREST</a></li>
+<li><a href="hobbies.html" target='myiframe'>HOBBIES</a></li>
 </ul>
 </div >
 <div id="ddd">
-<a href="contact.html"><img src="contact.jpg" width="200" height="200"></a></li>
+<a href="contact.html" target='myiframe'><img src="contact.jpg" width="200" height="200"></a></li>
 </div>
 <div id="eee">
-<a href="contact.html">CONTACT</a>
+<a href="contact.html" target='myiframe'>CONTACT</a>
 </div>
 </nav>
+<iframe id="myeee" name='myiframe'></iframe>
+<select id="foo">
+    <option>SELECT</option>
+    <option value="workexp.html">WORK EXPERIENCE</option>
+    <option value="projects.html">PROJECTS</option>
+    <option value="skills.html">SKILLS</option>
+    <option value="education.html">EDUCATION</option>
+    <option value="interest.html">RESEARCH INTERESTS</option>
+    <option value="hobbies.html">HOBBIES</option>
+</select>
+
+<script>
+    document.getElementById("foo").onchange = function() {
+        if (this.selectedIndex!==0) {
+            //window.location.href = this.value;
+            //window.location.target='myiframe';
+            document.getElementById("myeee").src = this.value;
+        }        
+    };
+</script>
 </body>
 </html>
