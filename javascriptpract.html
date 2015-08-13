@@ -1,0 +1,39 @@
+<!DOCTYPE htm>
+<html>
+<head>
+<title>Javascript practice</title>
+</head>
+<body>
+<form>
+<input type="button" value="firstbutton" onclick="myFunction()">
+<input type="button" value="gettext" onclick="gettext()">
+<input type="button" value="setText" onclick="settext()">
+
+<div>
+<p id="res1"></p>
+</div>
+<div>
+<p id="res2"></p>
+</div>
+</form>
+<script>
+
+function myFunction()
+{
+window.open("power.html", height="500",width="500");
+console.log("hey");
+
+}
+
+function gettext(){
+ document.getElementById("res1").innerHTML="hello"
+
+}
+
+function settext(){
+	document.getElementById("res2").innerHTML = document.getElementById("res1").innerHTML && 0;
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sample</title>
+</head>
+<body>
+<p>gello hello </p>
+<button onclick="myfunc1()">Try it</button>
+<script>
+	function myfunc1()
+	{
+	document.open();
+	document.writeln('Hello World...!');
+	document.writeln('<br />');
+	document.writeln('Press <kbd>Close</kbd> button to close this window...!');
+	document.writeln("<input type='button' value='Close' onclick='window.close()'/>");
+	document.close();
+    }
+</script>
+</body>
+</html>
