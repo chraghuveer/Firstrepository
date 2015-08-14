@@ -8,7 +8,7 @@ var flag = false;
 var func ="";
 
 function func1(){
-	flag = false;
+	
 	console.log("1");
 	if(sec===true){
 		op2=op2 + 1;
@@ -21,7 +21,7 @@ function func1(){
 	}
 }
 function func2(){
-	flag = false;
+	
 	console.log("2");
 	if(sec===true){
 		op2=op2 + 2;
@@ -35,7 +35,7 @@ function func2(){
 
 }
 function func3(){
-	flag = false;
+	
 	console.log("3");
 	if(sec===true){
 		op2=op2 + 3;
@@ -48,7 +48,7 @@ function func3(){
 	}
 }
 function func4(){
-	flag = false;
+	
 	console.log("4");
 	if(sec===true){
 		op2=op2 + 4;
@@ -61,7 +61,7 @@ function func4(){
 	}
 }
 function func5(){
-	flag = false;
+	
 	console.log("5");
 	if(sec===true){
 		op2=op2 + 5;
@@ -74,7 +74,7 @@ function func5(){
 	}
 }
 function func6(){
-	flag = false;
+	
 	console.log("6");
 	if(sec===true){
 		op2=op2 + 6;
@@ -87,7 +87,7 @@ function func6(){
 	}
 }
 function func7(){
-	flag = false;
+	
 	console.log("7");
 	if(sec===true){
 		op2=op2 + 7;
@@ -100,7 +100,7 @@ function func7(){
 	}
 }
 function func8(){
-	flag = false;
+	
 	console.log("8");
 	if(sec===true){
 		op2=op2 + 8;
@@ -113,7 +113,7 @@ function func8(){
 	}
 }
 function func9(){
-	flag = false;
+	
 	console.log("9");
 	if(sec===true){
 		op2=op2 + 9;
@@ -126,7 +126,7 @@ function func9(){
 	}
 }
 function func0(){
-	flag = false;
+	
 	console.log("0");
 	if(sec===true){
 		op2=op2 + 0;
@@ -139,7 +139,7 @@ function func0(){
 	}
 }
 function func10(){
-	flag = false;
+	
 	console.log(".");
 	if(sec===true){
 		op2=op2 + ".";
@@ -151,8 +151,12 @@ function func10(){
 		console.log(op1);
 	}
 }
-function funcadd(){
+function funcadd()
+
+{
 	
+	if(func==="")
+{
 	func = "add";
 	console.log("add");
 	if(sec===false && thi!==true){
@@ -188,10 +192,19 @@ function funcadd(){
         op2 ="";
 		}
 }
+
+else
+{
+	finaloperation();
+}
+}
 function funcsub(){
 	
+	if(func==="")
+	{
 	func = "sub";
 	console.log("sub");
+	console.log(sec);
 	if(sec===false && thi!==true){
 		sec = true;
 		func = "sub";
@@ -225,8 +238,15 @@ function funcsub(){
         op2 ="";
 		}
 }
+
+else{
+	finaloperation();
+}
+}
 function funcmul(){
 	
+	if(func==="")
+	{
 	func = "mul";
 	console.log("mul");
 	if(sec===false && thi!==true){
@@ -262,8 +282,15 @@ function funcmul(){
         op2 ="";
 		}
 }
+
+else
+{
+	finaloperation();
+}
+}
 function funcdiv(){
-	
+	if(func==="")
+	{
 	func = "div";
 	console.log("div");
    	if(sec===false && thi!==true){
@@ -302,13 +329,20 @@ function funcdiv(){
 
 
 }
+else{
+	finaloperation();
+}
+
+}
 
 
 
 
 function funcequal(){
+	
+
 	console.log("equals");
-	if(flag===true){
+	if(func===""){
 		res = parseFloat(res);
 		console.log(res);
 	}
@@ -340,6 +374,8 @@ res1 = (parseFloat(op1) || 0)+(parseFloat(op2) || 0);
 res = parseFloat(res);
 res = res+res1;
 console.log(parseFloat(res));
+console.log(func);
+
 }
 }
 
@@ -357,6 +393,7 @@ else{
 res1 = (parseFloat(res) || 0)-(parseFloat(op1) || 0);
 res = parseFloat(res1);
 console.log(parseFloat(res));
+
 }
 }
 
@@ -370,10 +407,18 @@ res1 = (parseFloat(op1) || 0)*(parseFloat(op2) || 0);
 res = res + res1;
 console.log(parseFloat(res));
 }
+
+
+else if(op1===""){
+	res = res;
+	console.log(parseFloat(res));
+
+}
 else{
 res1 = (parseFloat(res) || 0)*(parseFloat(op1) || 0);
 res = parseFloat(res1);
 console.log(parseFloat(res));
+
 }
 }
 
@@ -387,10 +432,17 @@ res1 = (parseFloat(op1) || 0)/(parseFloat(op2) || 0);
 res = res + res1;
 console.log(parseFloat(res));
 }
+else if(op1==="")
+{
+	res = res;
+	console.log(parseFloat(res));
+
+}
 else{
 res1 = (parseFloat(res) || 0)/(parseFloat(op1) || 0);
 res = parseFloat(res1);
 console.log(parseFloat(res));
+
 }
 }
 
@@ -416,9 +468,18 @@ function finaloperation(){
 
 	switch (func) {
     case "add":
-        res1 = (parseFloat(res) || 0)+(parseFloat(op1) || 0);
-        res = parseFloat(res1);
-        console.log(parseFloat(res));
+        if(res===""){
+res1 = (parseFloat(op1) || 0)+(parseFloat(op2) || 0);
+res = res + res1;
+console.log(parseFloat(res));
+}
+else{
+res1 = (parseFloat(op1) || 0)+(parseFloat(op2) || 0);
+res = parseFloat(res);
+res = res+res1;
+console.log(parseFloat(res));
+func ="";
+}
         break;
     case "sub":
         res1 = (parseFloat(res) || 0)-(parseFloat(op1) || 0);
@@ -436,10 +497,10 @@ function finaloperation(){
         console.log(parseFloat(res));
         break;
     }
-    sec = false;
+    
     op1 = "";
     op2 = "";
     res1 = 0;
     func = "";
-    flag = false;
+    
 }
